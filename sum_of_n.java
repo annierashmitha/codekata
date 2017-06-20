@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class loopsum {
+public class sum_of_n {
 	public static void main(String[] args){
 		Scanner s=new Scanner(System.in);
 		try{
