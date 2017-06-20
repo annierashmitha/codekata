@@ -1,6 +1,9 @@
+package guvi;
+
 import java.util.Scanner;
 public class numCheck {
 	public static void main(String[] args){
+		try{
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter any number:");
 		int n=s.nextInt();
@@ -19,6 +22,10 @@ public class numCheck {
 		else
 		{
 			System.out.println("Invalid Number");
+		}
+		}catch(Exception ex)
+		{
+			System.out.println("Exception (Invalid number)");
 		}
 	}
 }
