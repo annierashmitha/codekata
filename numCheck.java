@@ -1,5 +1,3 @@
-package guvi;
-
 import java.util.Scanner;
 public class numCheck {
 	public static void main(String[] args){
