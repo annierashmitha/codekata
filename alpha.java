@@ -6,7 +6,6 @@ public class alpha {
 		try{
 			System.out.println("Enter a character : ");
 			char c=s.next(".").charAt(0);
-			c=Character.toLowerCase(c);
 			if(Character.isAlphabetic(c)){
 				System.out.println("Alphabet");
 			}
