@@ -6,26 +6,12 @@ public class reverse_digits {
 			int l=0,rev=0,r;
 			int n=s.nextInt();
 			int a=n;
-			while(n>10)
+			while(n!=0)
 			{
-				l++;
+				rev=rev*10;
+				rev=rev+(n%10);
 				n=n/10;
 			}
-			l++;
-			while(a>10)
-			{
-				for(int i=l-1;i>0;i--)
-				{
-					r=a%10;
-					a=a/10;
-					int p=1;
-					for(int j=0;j<i;j++){
-						p=p*10;
-					}
-					rev=rev+(r*p);
-				}	
-			}
-			rev=rev+a;
 			System.out.println(rev);
 		}catch(Exception ex){
 			System.out.println("Not a valid number");
